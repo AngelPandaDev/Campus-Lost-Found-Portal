@@ -1,11 +1,10 @@
-
 import { API_BASE_URL } from '../config'
 import ItemForm from '../components/ItemForm'
 import { useNavigate } from 'react-router-dom'
 
 export default function Post() {
   const navigate = useNavigate();
-  
+
   const handleAdd = async (item) => {
     try {
       const formData = new FormData();

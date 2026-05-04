@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom'
 
 export default function ItemCard({ item }) {
-    // If image is a File/Blob URL, use it directly; if it's a path, prefix with API_BASE_URL
     let imageUrl = item.image;
     if (imageUrl && typeof imageUrl === 'string' && imageUrl[0] === '/') {
         try {
-            // Dynamically import config if available
-            // eslint-disable-next-line import/no-webpack-loader-syntax
             const { API_BASE_URL } = require('../config');
             imageUrl = API_BASE_URL + imageUrl;
-        } catch {}
+        } catch { }
     }
 
     return (

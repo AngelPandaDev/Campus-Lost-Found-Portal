@@ -1,12 +1,16 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
+import { useState } from "react";
 import Home from './pages/Home'
 import Browse from './pages/Browse'
 import Details from './pages/Details'
 import Post from './pages/Post'
 
 function App() {
+
+  
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -26,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
