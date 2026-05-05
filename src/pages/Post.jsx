@@ -16,7 +16,6 @@ export default function Post() {
       if (item.imageFile) {
         formData.append('image', item.imageFile);
       }
-      // If you have more fields, add them here
 
       const res = await fetch(`${API_BASE_URL}/items`, {
         method: 'POST',
