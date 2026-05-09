@@ -51,8 +51,8 @@ export default function ItemForm({ onAdd }) {
     };
 
     return (
-        <form 
-            onSubmit={handleSubmit} 
+        <form
+            onSubmit={handleSubmit}
             className="max-w-2xl mx-auto glass-card p-8 space-y-6"
         >
             <div className="text-center space-y-2">
@@ -101,8 +101,8 @@ export default function ItemForm({ onAdd }) {
                                 onChange={handleChange}
                                 className="w-full border border-gray-200 px-4 py-3 rounded-xl bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                             >
-                                <option value="lost">🔴 Lost</option>
-                                <option value="found">🟢 Found</option>
+                                <option value="lost">Lost</option>
+                                <option value="found">Found</option>
                             </select>
                         </div>
                         <div>
@@ -113,11 +113,11 @@ export default function ItemForm({ onAdd }) {
                                 onChange={handleChange}
                                 className="w-full border border-gray-200 px-4 py-3 rounded-xl bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
                             >
-                                <option value="Electronics">📱 Electronics</option>
-                                <option value="Personal">💼 Personal</option>
-                                <option value="Documents">📄 Documents</option>
-                                <option value="Books">📚 Books</option>
-                                <option value="Other">✨ Other</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Documents">Documents</option>
+                                <option value="Books">Books</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div>
